@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "07a38ad6-c297-4b76-a952-24722e55592d",
+		"name": "Customer-Service (Swagger2)",
+		"description": "Check all APIs in Swagger:\n\n[http://localhost:8080/swagger-ui.html#/](http://localhost:8080/swagger-ui.html#/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33936986"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/v1/employees",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dept\": \"Dev\",\r\n  \"id\": 2,\r\n  \"name\": \"Amit\",\r\n  \"salary\": 120\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/employees"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/employees",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dept\": \"Dev\",\r\n  \"id\": 1,\r\n  \"name\": \"Aloke\",\r\n  \"salary\": 120\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/employees"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/employees/2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dept\": \"Dev\",\r\n  \"id\": 1,\r\n  \"name\": \"Aloke\",\r\n  \"salary\": 120\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/employees/2"
+			},
+			"response": []
+		}
+	]
+}
